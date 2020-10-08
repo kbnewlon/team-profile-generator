@@ -58,10 +58,12 @@ Intern.test.js
 * Can get school via getSchool()
 
 ## Visuals
-![screenshot of generated team profile](assets/generated-README-screenshot.PNG)
+![screenshot of generated team profile](assets/generated_profile-screenshot.PNG)
+<br>
+![screenshot of responses in terminal](assets/terminal-response-screenshot.PNG)
 ## Links
-To Repo: https://github.com/kbnewlon/README-generator
-<br>To Demo: 
+To Repo: https://github.com/kbnewlon/team-profile-generator
+<br>To Demo: https://drive.google.com/file/d/1wPySY7ih4kKhOjVOjjvLFcTTeP42-VYB/view 
 
 ## Questions 
 Please contact me if you have any questions at:

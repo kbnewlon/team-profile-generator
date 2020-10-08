@@ -12,7 +12,6 @@ const render = require("./lib/htmlRenderer");
 //array variable
 const ansArr = [];
 
-
 //use inquirer to prompt user through questions
 inquirer.prompt([
     {
@@ -72,8 +71,8 @@ inquirer.prompt([
         message: "Would you like to add another employee?"
     }
     //this will push the user answers to the answer array
-]).then(function (res) {
-    switch (res.role) {
+]).then(function (response) {
+    switch (response.role) {
         case "Manager":
             const newManager = new Manager(res.name, red.id, res.email, res.officeNumber);
             ansArr.push(newManager);
@@ -90,14 +89,14 @@ inquirer.prompt([
             break;
 
         default:
-                console.log("err");
+            console.log("oops");
 
     }
 
     if (response.addMore === true) {
         start();
     } else {
-        const renderArr = render(ansArr);
+        const html = render(ansArr);
         fs.writeFile(outputPath, html, function (err) {
             if (err) {
                 console.log(err);
@@ -110,18 +109,4 @@ inquirer.prompt([
 });
 
 start();
-
-//this function renders the html file 
-
-
-// After the user has input all employees desired, call the `render` function (required
-// above) and pass in an array containing all employee objects; the `render` function will
-// generate and return a block of HTML including templated divs for each employee!
-
-// After you have your html, you're now ready to create an HTML file using the HTML
-// returned from the `render` function. Now write it to a file named `team.html` in the
-// `output` folder. You can use the variable `outputPath` above target this location.
-// Hint: you may need to check if the `output` folder exists and create it if it
-// does not.
-
 

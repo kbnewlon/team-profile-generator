@@ -1,6 +1,5 @@
 # Team-Profile-Generator
 
-
 ![issues](https://img.shields.io/github/issues/kbnewlon/team-profile-generator)
 ![GitHub top language](https://img.shields.io/github/languages/top/kbnewlon/team-profile-generator)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
